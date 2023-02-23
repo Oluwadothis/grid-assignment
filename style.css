@@ -1,120 +1,144 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
   width: 100%;
-  font-size: 13px;
+  border-color: red;
+  background-color: hsl(225, 100%, 94%);
+  text-align: center;
+}
+.container {
+  text-align: center;
+}
+.sub-container {
   display: flex;
-  place-items: center;
-  background-color: hsl(210, 46%, 95%);
+  flex-direction: column;
+  margin: 2% 35%;
+  border-radius: 25px 25px 10px 10px;
 }
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 2em;
+.person-img {
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
 }
-.first-group {
-  width: 70%;
+.bod {
+  width: 100%;
+  background-color: white;
+  padding: 2%;
 }
-.second-group {
+.order h2 {
+  margin: 4% 0% 2% 0%;
+}
+.order p {
+  margin: 0% 20%;
+  font-size: 0.9rem;
+  color: gray;
+}
+.plan {
+  padding: 1%;
+  margin: 5% 12%;
+  background-color: rgb(236, 233, 233);
+}
+.plan img {
+  padding: 0 3%;
+  width: 25%;
+}
+.plan p {
+  padding: 0 3%;
+  width: 45%;
+}
+.plan span {
+  padding: 0 3%;
   width: 30%;
 }
-.second-layer,
-.third-layer {
-    display: flex;
-    flex-direction: row;
+.try {
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
 }
-
-.item-a {
-    width: 65%;
-  background-color: hsl(263, 55%, 52%);
-  background-image: url(images/bg-pattern-quotation.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-blend-mode: overlay;
-  color: hsl(0, 0%, 81%);
-  border-radius: 10px;
-  padding: 2em;
-  margin: 1%;
-}
-.item-b {
-  background-color: hsl(217, 19%, 35%);
-  border-radius: 10px;
-  padding: 2em;
-  width: 35%;
-  margin: 1%;
+.but {
+  border: none;
+  padding: 2% 30%;
+  border-radius: 25px;
+  background-color: hsl(245, 75%, 52%);
   color: white;
+  margin-top: 3%;
+  cursor: pointer;
 }
-.item-c {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 10px;
-  padding: 2em;
-  width: 35%;
-  margin: 1%;
-  color: black;
-}
-
-.item-d {
-  background-color: hsl(219, 29%, 14%);
-  color: hsl(0, 0%, 81%);
-  margin-bottom: 50%;
-  text-align: justify;
-  border-radius: 10px;
-  padding: 2em;
-  width: 65%;
-  margin: 1%;
+.but2 {
+  border: none;
+  margin-top: 2%;
+  padding: 2%;
+  cursor: pointer;
+  color: gray;
+  background-color: rgb(235, 224, 224);
 }
 
-.item-e {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 10px;
-  padding: 2em;
-  margin: 1%;
-}
-.para-1 {
-  font-weight: 600;
-  font-family: monospace;
-  color: white;
-}
-.para-2 {
-  font-weight: 500;
-  opacity: 70%;
-}
-.para-black {
-    color: black;
-    font-size: 1.1rem;
-}
-img {
-  border-radius: 70%;
-  float: left;
-  width: 40px;
-  height: 40px;
-  margin-right: 5%;
-}
-.item-c .para-1 {
-  color: hsl(0, 0%, 81%);
-}
-.item-e .para-1 {
-  font-weight: bold;
-  color: green;
-}
 @media (max-width: 700px) {
-    main,
-    .second-layer,
-    .third-layer
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .item-a, .item-b, .item-c, .item-d {
-        width: 100%;
-    }
-    .second-group,
-    .first-group {
-        width: 100%;
-    }
+  .sub-container {
+    margin: 5%;
+  }
 }
+
+/*
+  justify-content: center;
+  flex: auto;
+  
+  width: 42%;
+  text-align: center;
+}
+
+.order {
+  text-align: center;
+  padding: 2em 5em 5em;
+}
+
+.order p {
+  margin-top: 5%;
+}
+.order a {
+  text-align: center;
+}
+.plan p {
+  float: left;
+  text-align: justify;
+}
+.plan .a {
+  margin-left: 25%;
+}
+.plan img {
+  margin-left: 20%;
+  float: left;
+  margin-right: 20px;
+}
+.but {
+  border-radius: 7px;
+  margin-left: 30%;
+  padding: 10px 40px;
+  width: 50%;
+  border-color: transparent;
+}
+.but:hover {
+  cursor: pointer;
+}
+a:hover {
+  cursor: pointer;
+}
+.shad {
+  margin-top: 40px;
+}
+.shad .but {
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0.1em 0.5em 1em hsl(224, 23%, 55%);
+  margin-bottom: 20px;
+  color: white;
+}
+.shad-2 .but {
+  background-color: white;
+  border-color: hsl(0, 0%, 95%);
+}
+*/
